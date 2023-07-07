@@ -46,23 +46,6 @@
     padding: 0.3%;
 }
 
-.input-icon {
-    color: white;
-    font-size: 4em;
-    padding: 0.3em;
-}
-
-input,
-select {
-    height: 100%;
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    color: white;
-    font-size: larger;
-}
-
 .select-container {
     display: flex;
     flex-direction: column;
@@ -71,11 +54,6 @@ select {
 
 .select-container select {
     width: 100%;
-}
-
-label {
-    color: lightgray;
-    font-size: small;
 }
 
 .select-item-type .input-icon {

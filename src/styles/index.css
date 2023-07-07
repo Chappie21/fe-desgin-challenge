@@ -23,3 +23,38 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+input,
+select {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: larger;
+}
+
+label {
+  color: lightgray;
+  font-size: small;
+}
+
+
+.input-icon {
+  color: white;
+  font-size: 4em;
+  padding: 0.3em;
+}
+
+.input-icon, .input-icon-secondary {
+  color: #39e29d;
+  font-size: 4em;
+  padding: 0.3em;
+}
+
+.select-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
