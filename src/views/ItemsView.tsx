@@ -1,6 +1,7 @@
 import '../styles/ItemsView.css'
-import { ToolBar, CardContainer } from '../components'
+import { ToolBar, CardContainer, ListItems } from '../components'
 import { LuSettings2 } from 'react-icons/lu'
+import { items } from '../mock'
 
 
 export const ItemsView = () => {
@@ -16,12 +17,12 @@ export const ItemsView = () => {
         <CardContainer>
 
           {/* Modal Header */}
-          <div className="header-modal-container">
+          <article className="header-modal-container">
             <p>Show 20 - from 125</p>
 
             {/* Filter sort */}
             <div className="filter-input-container">
-              <LuSettings2 className="input-icon-secondary" />
+              <LuSettings2 className="input-icon input-icon-secondary" />
               <div className='select-input'>
                 <label>Sort By</label>
                 <select>
@@ -31,8 +32,14 @@ export const ItemsView = () => {
                 </select>
               </div>
             </div>
-          </div>
+          </article>
 
+          {/* Items list */}
+          <article className='list'> 
+            <ListItems
+              items={items}
+            />
+          </article>
 
 
         </CardContainer>
