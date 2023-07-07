@@ -9,7 +9,9 @@ export const App = () => {
       <NavigationHeader />
 
       {/* Main Content */}
-      <MainRouter />
+      <main>
+        <MainRouter />
+      </main>
 
       {/* Footer */}
       <Footer />

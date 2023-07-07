@@ -1,0 +1,21 @@
+.main-container {
+    width: 60%;
+    height: 100%;
+}
+
+.title {
+    color: white;
+    font-size: 3em;
+}
+
+
+@media (max-width: 950px) {
+    .title {
+        font-size: 1.5em;
+    }
+
+    .main-container {
+        width: 85%;
+        height: 100%;
+    }
+}
