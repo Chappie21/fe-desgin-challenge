@@ -46,16 +46,6 @@
     padding: 0.3%;
 }
 
-.select-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.select-container select {
-    width: 100%;
-}
-
 .select-item-type .input-icon {
     color: #39e29d;
 }

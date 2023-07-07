@@ -34,7 +34,7 @@ export const ToolBar = () => {
                     <div className='select-price'>
                         <BiSolidCoinStack className='input-icon' />
 
-                        <div className='select-container'>
+                        <div className='select-input'>
                             <label>Price</label>
                             <select>
                                 <option>All</option>
@@ -48,7 +48,7 @@ export const ToolBar = () => {
                     <div className='select-item-type'>
                         <FaFeatherAlt className='input-icon' />
 
-                        <div className='select-container'>
+                        <div className='select-input'>
                             <label>Item Type</label>
                             <select>
                                 <option>All</option>
