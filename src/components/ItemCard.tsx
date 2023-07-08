@@ -52,7 +52,7 @@ export const ItemCard = ({
                     <div className="item-card-herader-quantity">
                         <input
                             name="quantity"
-                            type="text"
+                            type="number"
                             value={quantity}
                         />
                     </div>
