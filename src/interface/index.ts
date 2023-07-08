@@ -1,3 +1,5 @@
 export * from './INavItem'
 export * from './ICurrency'
 export * from './IITem'
+export * from './IPaymentMethod'
+export * from './ICompanyData'
