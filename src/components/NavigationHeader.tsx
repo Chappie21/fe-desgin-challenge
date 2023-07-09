@@ -3,6 +3,9 @@ import "../styles/NavBar.css"
 import { NavigationItem } from "./NavigationItem";
 import { NavItems } from "../mock";
 import { currencies } from "../mock/CurrencyList";
+import { BsFillPersonFill } from 'react-icons/bs';
+import { FaShoppingCart } from 'react-icons/fa';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 export const NavigationHeader = () => {
 
@@ -12,12 +15,10 @@ export const NavigationHeader = () => {
         <header>
             <nav className="navbar">
                 <section className="sec-1">
-                    <img src="../../public/chicks-logo-large.svg" alt="logo" />
                     <button className="burger" onClick={() => setShowSidebar(true)}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <GiHamburgerMenu />
                     </button>
+                    <img src="../../public/chicks-logo-large.svg" alt="logo" />
                 </section>
 
                 <section className="sec-2">
@@ -37,35 +38,34 @@ export const NavigationHeader = () => {
 
                 <section className="sec-3">
                     <div>
-                        <details>
-                            <summary className="item">
-                                USD
-                            </summary>
-                            <ul className="">
-                                {
-                                    currencies.map((currency, index) => 
-                                        <li className="" key={index}>
-                                            <img src={currency.flag} alt={currency.name} />
-                                            <span>{currency.name}</span>
-                                        </li>
-                                    )
-                                }
-                            </ul>
-
-                        </details>
+                        <NavigationItem
+                            title="USD"
+                            customList={
+                                currencies.map((currency, index) =>
+                                    <li className="currency-item" key={index}>
+                                        <img src={currency.flag} alt={currency.name} />
+                                        <span>{currency.name}</span>
+                                    </li>
+                                )
+                            }
+                        />
                     </div>
 
-                    <div>
-                        <div>
-                            
-                        </div>
+                    {/* Cart */}
 
-                        <button className="buy-button">
-                            Sign in
-                        </button>
+                    <div className="cart-container">
+                        <FaShoppingCart />
+                        {'Cart (5)'}
                     </div>
+
+
+                    <button className="button login">
+                        Sign in
+                        <BsFillPersonFill />
+                    </button>
+
                 </section>
             </nav>
-        </header>
+        </header >
     )
 }
