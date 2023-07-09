@@ -23,7 +23,7 @@ export const NavigationHeader = ({ handleClickBurgerButton }:props) => {
                 </section>
 
                 <section className="sec-2">
-                    <ul>
+                    <ul className="navlist">
                         {
                             NavItems.map((item, index) =>
                                 <li className="item" key={index}>

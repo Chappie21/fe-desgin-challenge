@@ -58,16 +58,17 @@
     font-size: 2rem;
 }
 
-.sec-2 ul {
+.sec-2 .navlist {
     flex: 1;
     display: flex;
     justify-content: stretch;
     align-items: center;
     list-style: none;
     text-decoration: none;
+    gap: 2.5em;
 }
 
-.item {
+.navlist details {
     flex: 1;
     max-width: 10em;
     font-size: 0.8em;
