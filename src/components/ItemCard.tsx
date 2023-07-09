@@ -26,7 +26,7 @@ export const ItemCard = ({
         <CardContainer
             backgroundColor={backGroundColor}
             borderColor={borderColor}
-            width="14em"
+            width="12em"
             height="20em"
             padding="1em"
         >
