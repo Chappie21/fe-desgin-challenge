@@ -56,6 +56,26 @@ export const Footer = () => {
             ))
           }
 
+          {/* Company Data mobile */}
+          <div className="colum-information-mobile">
+            {
+              companyData.map((companyData, index) => (
+                <details key={index} className="colum-information-details">
+                  <summary>{companyData.title}</summary>
+                  <ul>
+                    {
+                      companyData.childrens.map((info, index) => (
+                        <li key={index}>
+                          {info}
+                        </li>
+                      ))
+                    }
+                  </ul>
+                </details>
+              ))
+            }
+          </div>
+
           {/* rating */}
           <div className="colum-information rating">
             <div>
