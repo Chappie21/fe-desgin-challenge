@@ -1,5 +1,4 @@
-import { useState } from "react"
-import "../styles/NavBar.css"
+import "../styles/components/NavBar.css";
 import { NavigationItem } from "./NavigationItem";
 import { NavItems } from "../mock";
 import { currencies } from "../mock/CurrencyList";

@@ -40,6 +40,7 @@
     justify-content: space-between;
     align-items: center;
     min-width: 17vw;
+    gap: 1em;
 }
 
 .sec-3 details {
