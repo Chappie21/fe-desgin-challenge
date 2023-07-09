@@ -19,7 +19,7 @@
     align-items: center;
     justify-content: flex-start;
     flex-flow: row wrap;
-    width: 15rem;
+    width: 12rem;
     border-right: 1px solid hsla(0, 0%, 100%, .3);
     padding-bottom: 1%;
 }
