@@ -15,6 +15,8 @@ export const ListItems = ({ items }: props) => {
                 items.map((items) => (
                     <ItemCard
                         key={items.id}
+                        width="12em"
+                        height="20em"
                         {...items}
                     />
                 ))

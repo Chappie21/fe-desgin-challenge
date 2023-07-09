@@ -4,12 +4,15 @@ import "../styles/components/ItemCard.css"
 import { BsCircleFill, BsCartFill } from "react-icons/bs"
 
 interface props extends IItem {
+    width: string;
+    height: string;
     backGroundColor?: string;
     borderColor?: string;
 }
 
 export const ItemCard = ({
-    id,
+    width,
+    height,
     name,
     description,
     game,
@@ -26,8 +29,8 @@ export const ItemCard = ({
         <CardContainer
             backgroundColor={backGroundColor}
             borderColor={borderColor}
-            width="12em"
-            height="20em"
+            width={width}
+            height={height}
             padding="1em"
         >
             <div className="item-card-container">
