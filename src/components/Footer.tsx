@@ -80,7 +80,7 @@ export const Footer = () => {
           <div className="colum-information rating">
             <div>
               {
-                [1, 2, 3, 4, 5].map((data, index) => (
+                new Array(5).fill(undefined).map((_, index) => (
                   <img key={index} src="https://chicksgold.com/home/star_full.svg" alt="start" />
                 ))
               }
