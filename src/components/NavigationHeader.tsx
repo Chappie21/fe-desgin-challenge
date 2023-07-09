@@ -7,22 +7,24 @@ import { BsFillPersonFill } from 'react-icons/bs';
 import { FaShoppingCart } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
-export const NavigationHeader = () => {
+interface props {
+    handleClickBurgerButton: () => void;
+}
 
-    const [showSidebar, setShowSidebar] = useState<boolean>(false);
+export const NavigationHeader = ({ handleClickBurgerButton }:props) => {
 
     return (
         <header>
             <nav className="navbar">
                 <section className="sec-1">
-                    <button className="burger" onClick={() => setShowSidebar(true)}>
+                    <button className="burger" onClick={handleClickBurgerButton}>
                         <GiHamburgerMenu />
                     </button>
                     <img src="../../public/chicks-logo-large.svg" alt="logo" />
                 </section>
 
                 <section className="sec-2">
-                    <ul className={`sidebar ${showSidebar ? 'sidebar--visible' : ''}`}>
+                    <ul>
                         {
                             NavItems.map((item, index) =>
                                 <li className="item" key={index}>

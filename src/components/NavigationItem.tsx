@@ -5,10 +5,11 @@ import '../styles/components/NavItem.css'
 interface props {
   title: string,
   items?: string[],
-  customList?: any
+  customList?: any,
+  dropdownClass?: string;
 }
 
-export const NavigationItem = ({ title, items, customList }: props) => {
+export const NavigationItem = ({ title, items, customList, dropdownClass = 'dropdown' }: props) => {
 
   const [toggle, setToggle] = useState<boolean>(false);
 
@@ -21,7 +22,7 @@ export const NavigationItem = ({ title, items, customList }: props) => {
           toggle ? <IoIosArrowUp /> : <IoIosArrowDown />
         }
       </summary>
-      <ul className='dropdown'>
+      <ul className={dropdownClass}>
         {
           !customList 
           ?
