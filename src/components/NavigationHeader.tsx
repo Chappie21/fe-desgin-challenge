@@ -19,7 +19,7 @@ export const NavigationHeader = ({ handleClickBurgerButton }:props) => {
                     <button className="burger" onClick={handleClickBurgerButton}>
                         <GiHamburgerMenu />
                     </button>
-                    <img src="../../public/chicks-logo-large.svg" alt="logo" />
+                    <img src="https://chicksgold.com/logo/chicks-logo-large.svg" alt="logo" />
                 </section>
 
                 <section className="sec-2">
