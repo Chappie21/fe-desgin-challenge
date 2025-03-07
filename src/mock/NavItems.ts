@@ -24,7 +24,7 @@ export const NavItems:INavItem[] = [
         childrens: items
     },
     {
-        title: 'more',
+        title: 'swap',
         childrens: items
     },
     {

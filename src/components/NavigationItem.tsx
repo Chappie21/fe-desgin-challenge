@@ -17,9 +17,9 @@ export const NavigationItem = ({ title, items, customList, dropdownClass = 'drop
   return (
     <details onToggle={() => setToggle(!toggle)}>
       <summary>
-        {title}
+        <span>{title}</span>
         {
-          toggle ? <IoIosArrowUp /> : <IoIosArrowDown />
+          toggle ? <IoIosArrowUp size={16}/> : <IoIosArrowDown size={16} />
         }
       </summary>
       <ul className={dropdownClass}>

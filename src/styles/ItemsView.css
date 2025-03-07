@@ -17,7 +17,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: rgb(199, 197, 197);
+
+    span {
+        font-weight: 300;
+    }
 }
 
 .filter-input-container {

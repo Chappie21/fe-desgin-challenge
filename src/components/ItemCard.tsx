@@ -57,6 +57,7 @@ export const ItemCard = ({
                             name="quantity"
                             type="number"
                             value={quantity}
+                            readOnly
                         />
                     </div>
                 </div>

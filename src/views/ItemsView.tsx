@@ -18,7 +18,7 @@ export const ItemsView = () => {
 
           {/* Modal Header */}
           <article className="header-modal-container">
-            <p>Show 20 - from 125</p>
+            <span>Showing 20 - from 125</span>
 
             {/* Filter sort */}
             <div className="filter-input-container">
