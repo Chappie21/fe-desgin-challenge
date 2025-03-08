@@ -1,0 +1,13 @@
+:root {
+    --breakpoint-xs: 480px;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1400px;
+
+    /* Colors */
+    --color-white: rgba(255, 255, 255, 1);
+    --color-placeholder: rgba(199, 202, 201, 1);
+    --color-main-icon: rgba(57, 226, 157, 1);
+}

@@ -3,6 +3,7 @@ import { GiBroadsword } from 'react-icons/gi'
 import { LuSearch } from 'react-icons/lu'
 import { BiSolidCoinStack } from 'react-icons/bi'
 import { FaFeatherAlt } from 'react-icons/fa'
+import { CustomSelect } from './CustomSelect'
 
 export const ToolBar = () => {
     return (
@@ -13,6 +14,7 @@ export const ToolBar = () => {
                     className='input-icon'
                 />
                 <select>
+                    <option>Select a game</option>
                     <option>Game 1</option>
                     <option>Game 1</option>
                     <option>Game 1</option>
@@ -27,37 +29,29 @@ export const ToolBar = () => {
                         name='search'
                         type='text'
                         placeholder='Search'
+                        readOnly
                     />
                 </div>
 
                 <div className='selects-searchbar'>
                     <div className='select-price'>
-                        <BiSolidCoinStack className='input-icon' />
-
-                        <div className='select-input'>
-                            <label>Price</label>
-                            <select>
-                                <option>All</option>
-                                <option>Game 1</option>
-                                <option>Game 1</option>
-                            </select>
-                        </div>
-
+                        <CustomSelect
+                            label="Price"
+                            icon={<BiSolidCoinStack className='input-icon' />}
+                            options={['All', 'Low to High', 'High to Low']}
+                            value="All"
+                        />
                     </div>
 
                     <div className='select-item-type'>
-                        <FaFeatherAlt className='input-icon' />
-
-                        <div className='select-input'>
-                            <label>Item Type</label>
-                            <select>
-                                <option>All</option>
-                                <option>Game 1</option>
-                                <option>Game 1</option>
-                            </select>
-                        </div>
+                        <CustomSelect
+                            label="Item Type"
+                            icon={<FaFeatherAlt className='input-icon' />}
+                            options={['All', 'Weapons', 'Armor']}
+                            value="All"
+                        />
                     </div>
-                </div>
+                 </div>
 
             </div>
 

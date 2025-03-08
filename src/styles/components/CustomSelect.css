@@ -1,0 +1,37 @@
+#custom-select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+
+  .select-content {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3px;
+
+    select {
+      width: 100%;
+      padding-right: 1.5rem;
+      background: transparent;
+      appearance: none;
+    }
+
+    label {
+      font-size: 12px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 8px;
+      top: 55%;
+      transform: translateY(-50%);
+      width: 14px;
+      height: 14px;
+      background-size: 14px;
+      background: url("../../assets/icons/row-down.svg") center/contain no-repeat;
+      pointer-events: none;
+    }
+  }
+}
