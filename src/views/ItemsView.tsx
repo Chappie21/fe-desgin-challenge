@@ -7,8 +7,7 @@ import { CustomSelect } from '../components/CustomSelect'
 
 export const ItemsView = () => {
   return (
-    <div className="main-container">
-
+    <div id="items-view">
       <header>
         <h1 className="title">Condimentum consectetur</h1>
         <ToolBar />
