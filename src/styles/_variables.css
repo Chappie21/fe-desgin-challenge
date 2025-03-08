@@ -8,6 +8,7 @@
 
     /* Colors */
     --color-white: rgba(255, 255, 255, 1);
+    --color-grey: rgba(199, 202, 201, 1);
     --color-placeholder: rgba(199, 202, 201, 1);
     --color-main-icon: rgba(57, 226, 157, 1);
 }

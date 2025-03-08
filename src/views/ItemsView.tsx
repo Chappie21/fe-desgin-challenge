@@ -2,6 +2,7 @@ import '../styles/ItemsView.css'
 import { ToolBar, CardContainer, ListItems } from '../components'
 import { LuSettings2 } from 'react-icons/lu'
 import { items } from '../mock'
+import { CustomSelect } from '../components/CustomSelect'
 
 
 export const ItemsView = () => {
@@ -22,14 +23,13 @@ export const ItemsView = () => {
 
             {/* Filter sort */}
             <div className="filter-input-container">
-              <LuSettings2 className="input-icon input-icon-secondary" />
               <div className='select-input'>
-                <label>Sort By</label>
-                <select>
-                  <option>Featured</option>
-                  <option>Game 1</option>
-                  <option>Game 1</option>
-                </select>
+                <CustomSelect 
+                  label='Sort By'
+                  icon={<LuSettings2 className="input-icon input-icon-secondary" />}
+                  options={['Featured', 'Game 1', 'Game 2']}
+                  value='Featured'
+                />
               </div>
             </div>
           </article>

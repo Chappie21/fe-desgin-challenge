@@ -15,10 +15,12 @@
       padding-right: 1.5rem;
       background: transparent;
       appearance: none;
+      letter-spacing: 0.68px;
     }
 
     label {
       font-size: 12px;
+      letter-spacing: 0.68px;
     }
 
     &::after {

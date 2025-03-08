@@ -1,3 +1,5 @@
+@import url('./_variables.css');
+
 .main-container {
     width: 65%;
     height: 100%;
@@ -6,6 +8,7 @@
 .title {
     color: white;
     font-size: 2.5em;
+    letter-spacing: 0.68px;
 }
 
 .modal-container {
@@ -17,7 +20,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    color: rgb(199, 197, 197);
+    color: var(--color-grey);
 
     span {
         font-weight: 300;
@@ -30,10 +33,24 @@
     align-items: center;
     justify-content: center;
     background-color: #4c608533;
-    padding: 0.3%;
-    border-radius: 0.4em;
+    padding: 10px;
+    border-radius: 2px;
     width: 12em;
     height: 100%;
+
+    .select-input {
+        #custom-select {
+           .select-content {
+                label {
+                    color: rgb(184, 187, 186);
+                }
+           }
+        }
+
+        .input-icon {
+            font-size: 36px;
+        }
+    }
 }
 
 .list {

@@ -108,6 +108,7 @@
 }
 
 details {
+    letter-spacing: 0.68px;
     summary {
         display: flex;
         align-items: center;

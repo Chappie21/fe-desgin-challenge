@@ -1,3 +1,5 @@
+@import url('./_variables.css');
+
 * {
   margin: 0;
   padding: 0;
@@ -32,7 +34,7 @@ select {
   border: none;
   outline: none;
   color: white;
-  font-size: larger;
+  font-size: 16px;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -48,17 +50,17 @@ label {
 
 
 .input-icon {
-  color: white;
+  color: var(--color-white);
   font-size: 26px;
   padding: 4px 2px;
 
-  input-icon-secondary {
-    color: #39e29d;
+  &.input-icon-secondary {
+    color: var(--color-main-icon);
   }
 }
 
 .input-icon-small {
-  color: white;
+  color: var(--color-white);
   font-size: 3em;
   padding: 0.3em;
 }
@@ -73,7 +75,7 @@ label {
   outline: none;
   border: none;
   background-color: #39e29d;
-  color: white;
+  color: var(--color-white);
   border-radius: 0.5em;
   padding-inline: 1.5em;
   padding-block: 0.9em;
