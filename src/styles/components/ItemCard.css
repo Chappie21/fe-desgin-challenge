@@ -1,32 +1,34 @@
-.item-card-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: column wrap;
-}
+@import url("../_variables.css");
 
-.item-card-header {
+#item-card-info {
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  gap: 12px;
+
+  .item-card-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
-}
+  }
 
-.item-card-header-information {
+  .item-card-header-information {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
-    gap: 0.4em;
-}
+    gap: 12px;
+  }
 
-.item-card-herader-quantity {
-    width: 5em;
+  .item-card-herader-quantity {
+    max-width: 5em;
     height: 3em;
     border-radius: 0.5em;
-    border: 2px solid transparent;
     background-color: #4c608526;
     display: flex;
     align-items: center;
@@ -34,91 +36,121 @@
     position: relative;
 
     input {
-        width: 100%;
-        height: 100%;
-        border: none;
-        background: transparent;
-        text-align: start;
-        padding-inline: 8px;
+      width: 100%;
+      height: 100%;
+      border: none;
+      background: transparent;
+      text-align: start;
+      padding-inline: 8px;
     }
-}
+  }
 
-.item-card-image {
+  .item-card-image {
     width: 3em;
-}
+    height: 3em;
+  }
 
-.item-card-body {
+  .item-card-body {
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     gap: 0.5em;
-}
 
-.item-card-body p {
-    width: 100%;
-    font-size: 0.7em;
-    color: lightgray;
-}
+    .item-card-body-price {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      color: var(--color-white);
 
-.item-card-body-game {
+      :first-child {
+        font-weight: 600;
+      }
+    }
+
+    p {
+      width: 100%;
+      font-size: 10px;
+      line-height: 2em;
+      color: var(--color-grey);
+    }
+  }
+
+  .item-card-body-game {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    color: white;
-}
+    color: var(--color-white);
 
-.item-card-body-price {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5em;
-    color: white;
-}
+    .icon-game-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        border: 1px solid var(--color-main-icon);
+        border-radius: 40px;
+        padding: 2px;
 
-.discount {
+        img {
+            width: 20px;
+            height: 20px;
+            filter: brightness(0) invert(68%) sepia(33%) saturate(678%) hue-rotate(108deg) brightness(100%) contrast(89%);
+        }
+    }
+  }
+
+  .discount {
     font-weight: 400 !important;
     text-decoration: line-through;
     text-decoration-color: red;
     color: lightgray;
-}
+  }
 
-.item-card-body-buttons {
+  .item-card-body-buttons {
     width: 100%;
-    margin-top: 1em;
+    margin-top: 10px;
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
-}
+    gap: 5px;
+  }
 
-.item-on-sale {
+  .item-on-sale {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-size: .7em;
-    color: white;
-    gap: 0.3em;
-}
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0.68px;
+    text-transform: uppercase;
+    color: var(--color-white);
+    gap: 5px;
 
-.item-card-stock {
-    padding: 0.3em;
-    font-size: small;
-    border: 2px solid;
-    border-radius: 0.3em;
-    border-color: #39e29d;
-    color: #39e29d;
-    font-size: .7em;
+    .item-indicator {
+      font-size: 5px;
+    }
+  }
+
+  .item-card-stock {
+    padding: 5px 8px;
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: var(--color-main-icon);
+    color: var(--color-main-icon);
+    font-size: 11px;
+    font-weight: 300;
     text-align: center;
-}
+  }
 
-.item-card-no-stock {
+  .item-card-no-stock {
     padding: 0.3em;
     font-size: small;
     border: 2px solid;
@@ -126,29 +158,42 @@
     border-color: rgb(221, 52, 52);
     color: rgb(221, 52, 52);
     text-align: center;
-}
+  }
 
-.button.buy-button {
-    background-color: #5762d5;
-    color: white;
+  .button {
     letter-spacing: normal;
-    width: 6.6em;
     padding-block: 0;
+    max-width: none;
+    min-width: 60px;
     height: 3.5em;
-}
+    flex: 1 1 auto;
 
-.button.details-button {
-    background-color: #4c608526;
-    color: lightgray;
-    letter-spacing: normal;
-    width: 6.6em;
-    padding-block: 0;
-    height: 3.5em;
-}
+    &.buy-button {
+        background-color: var(--color-buttom-main);
+        color: var(--color-white);
+    }
 
-.cart-icon-container {
-    width: 100%;
-    background-color: #4b56d3;
-    border: 1px solid transparent;
-    border-radius: 1em;
+    &.details-button {
+        background-color: var(--color-buttom-dark-grey);
+        color: var(--color-grey-light);
+        font-weight: 400;
+    }
+  }
+
+
+  .cart-icon-container {
+    width: 40px;
+    height: 35px;
+    background-color: #444fc7;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .input-icon-small {
+        min-width: 35px;
+        font-size: 24px;
+        padding: 5px;
+    }
+  }
 }

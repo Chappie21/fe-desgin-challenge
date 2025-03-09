@@ -7,11 +7,15 @@ interface props extends PropsWithChildren {
   width?: string;
   height?: string;
   padding?: string;
+  border?: string;
+  boxShadow?: string;
 }
 
 export const CardContainer = ({
   children,
   backgroundColor = '#303141',
+  border,
+  boxShadow,
   borderColor = 'rgb(73,80,119)',
   height = '100%',
   width = '100%',
@@ -25,7 +29,9 @@ export const CardContainer = ({
         borderColor,
         minWidth: width,
         height,
-        padding
+        padding,
+        border,
+        boxShadow
       }}
     >
       {children}

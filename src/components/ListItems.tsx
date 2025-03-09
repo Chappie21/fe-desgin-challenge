@@ -10,44 +10,32 @@ interface props {
 
 export const ListItems = ({ items }: props) => {
     return (
-        <div id="list-items">
-            {
-                items.map((items) => (
+        <div id="list-items-container">
+            <div className="items-grid">
+                {items.map((item) => (
                     <ItemCard
-                        key={items.id}
-                        width="12em"
-                        height="20em"
-                        {...items}
+                        key={item.id}
+                        width="100%"
+                        height="20.5em"
+                        {...item}
                     />
-                ))
-            }
-            <footer className="paginatior-fotter ">
+                ))}
+            </div>
+            
+            <footer className="paginatior-footer">
                 <ul>
                     <li className="page button-row">
                         <IoIosArrowBack />
                     </li>
-                    <li className="page">
-                        1
-                    </li>
-                    <li className="page">
-                        2
-                    </li>
-                    <li className="page">
-                        <span>3</span>
-                    </li>
-                    <li className="page">
-                        <span>4</span>
-                    </li>
-                    <li className="page">
-                        <span>...</span>
-                    </li>
-                    <li className="page">
-                        <span>11</span>
-                    </li>
+                    <li className="page">1</li>
+                    <li className="page">2</li>
+                    <li className="page">3</li>
+                    <li className="page">4</li>
+                    <li className="page">...</li>
+                    <li className="page">11</li>
                     <li className="page button-row">
                         <IoIosArrowForward />
                     </li>
-
                 </ul>
             </footer>
         </div>

@@ -22,8 +22,8 @@ export const ItemCard = ({
     onSale,
     onStock,
     quantity,
-    backGroundColor = '#4c608526',
-    borderColor = '#4c608526',
+    backGroundColor = 'rgba(76, 96, 133, 0.15)',
+    borderColor = 'rgba(76, 96, 133, 0.15)',
 }: props) => {
     return (
         <CardContainer
@@ -31,24 +31,30 @@ export const ItemCard = ({
             borderColor={borderColor}
             width={width}
             height={height}
-            padding="1em"
+            padding="16px"
+            border="none"
+            boxShadow="none"
         >
-            <div className="item-card-container">
+            <div id="item-card-info">
                 <div className="item-card-header">
                     <div className="item-card-header-information">
 
                         <div className="item-on-sale">
-                            <BsCircleFill
-                                style={{
-                                    color: onSale ? '#39e29d' : 'rgb(221, 52, 52)'
-                                }}
-                            />
-                            {onSale ? 'On Sale' : 'Not for Sale'}
+                            {
+                                onSale &&
+                                <BsCircleFill
+                                    style={{
+                                        color: onSale ? 'rgba(57, 226, 157, 1)' : 'rgba(221, 52, 52, 1)'
+                                    }}
+                                    className="item-indicator"
+                                />
+                            }
+                            <span>{onSale ? 'On Sale' : ''}</span>
                         </div>
 
 
                         <div className={onStock ? "item-card-stock" : "item-card-no-stock"}>
-                            {onStock ? 'In Stock' : 'Off Stock'}
+                            <span>{onStock ? 'In stock' : 'Off stock'}</span>
                         </div>
                     </div>
 
@@ -68,7 +74,9 @@ export const ItemCard = ({
 
                     <div className="item-card-body-game">
                         <span>{name}</span>
-                        <img src={game} alt={name} />
+                        <div className="icon-game-container">
+                            <img src={game} alt={name} />
+                        </div>
                     </div>
 
                     <div className="item-card-body-price">

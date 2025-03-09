@@ -11,4 +11,13 @@
     --color-grey: rgba(199, 202, 201, 1);
     --color-placeholder: rgba(199, 202, 201, 1);
     --color-main-icon: rgba(57, 226, 157, 1);
+    --color-buttom-main: rgba(87, 98, 213, 1);
+    --color-buttom-dark-grey: rgba(76, 96, 133, 0.25);
+    --color-grey-light: rgba(199, 202, 201, 0.8);
+
+
+    /* Fonts size */
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-md: 16px;
 }
