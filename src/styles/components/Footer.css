@@ -47,8 +47,8 @@ footer {
         align-items: center;
         justify-content: flex-start;
         gap: 10px;
-        padding-bottom: 1.5em;
-        border-bottom: 3px solid rgba(76, 96, 133, 1);
+        padding-bottom: 2em;
+        border-bottom: 2px solid rgba(76, 96, 133, 1);
     
         a {
             width: 40px;

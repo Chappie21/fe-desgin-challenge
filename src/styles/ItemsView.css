@@ -58,6 +58,7 @@
     .select-input {
       #custom-select {
         .select-content {
+          width: 100%;
           label {
             color: rgb(184, 187, 186);
           }
