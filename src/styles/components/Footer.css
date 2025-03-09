@@ -166,8 +166,31 @@ footer {
         justify-content: space-between;
         align-items: center;
         flex-flow: row wrap;
-        padding-right: 0.5em;
+        padding-right: 25px;
         cursor: pointer;
+        list-style: none;
+        position: relative;
+
+        &::-webkit-details-marker {
+           display: none;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 14px;
+            height: 14px;
+            background: url('../../assets/icons/row-down.svg') no-repeat center;
+            background-size: 12px;
+            transition: transform 0.3s ease;
+        }
+    }
+
+    .colum-information-details[open] summary::after {
+        transform: translateY(-50%) rotate(180deg);
     }
     
     .colum-information-details ul {
