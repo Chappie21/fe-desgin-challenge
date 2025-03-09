@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { IItem } from "../interface"
 import { CardContainer } from ".";
-import "../styles/components/ItemCard.css"
+import { QuantityInput } from "./QuantityInput";
 import { BsCircleFill, BsCartFill } from "react-icons/bs"
+import "../styles/components/ItemCard.css"
 
 interface props extends IItem {
     width: string;
@@ -25,6 +27,9 @@ export const ItemCard = ({
     backGroundColor = 'rgba(76, 96, 133, 0.15)',
     borderColor = 'rgba(76, 96, 133, 0.15)',
 }: props) => {
+    const [localQuantity, setLocalQuantity] = useState(quantity);
+
+
     return (
         <CardContainer
             backgroundColor={backGroundColor}
@@ -59,11 +64,9 @@ export const ItemCard = ({
                     </div>
 
                     <div className="item-card-herader-quantity">
-                        <input
-                            name="quantity"
-                            type="number"
-                            value={quantity}
-                            readOnly
+                        <QuantityInput
+                            value={localQuantity}
+                            onChange={setLocalQuantity}
                         />
                     </div>
                 </div>

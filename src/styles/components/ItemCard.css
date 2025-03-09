@@ -26,23 +26,13 @@
   }
 
   .item-card-herader-quantity {
-    max-width: 5em;
+    max-width: 4em;
     height: 3em;
     border-radius: 0.5em;
     background-color: #4c608526;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-
-    input {
-      width: 100%;
-      height: 100%;
-      border: none;
-      background: transparent;
-      text-align: start;
-      padding-inline: 8px;
-    }
   }
 
   .item-card-image {
