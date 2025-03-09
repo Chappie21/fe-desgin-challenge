@@ -14,6 +14,12 @@
     --color-buttom-main: rgba(87, 98, 213, 1);
     --color-buttom-dark-grey: rgba(76, 96, 133, 0.25);
     --color-grey-light: rgba(199, 202, 201, 0.8);
+    --color-footer-text-grey: rgba(133, 132, 148, 1);
+    --color-main-button-background: rgba(87, 98, 213, 0.8);
+    --color-navbar-background: rgba(48, 49, 65, 1);
+    --color-border: rgb(73, 80, 119);
+    --color-background-dark-grey: rgba(43, 44, 60, 1);
+    --color-background-input-grey: rgba(76, 96, 133, 0.2);
 
     /* Social media colors */
     --color-facebook: rgba(59, 89, 152, 1);
@@ -21,9 +27,11 @@
     --color-instagram: linear-gradient(45deg,rgba(255, 154, 139, 1) 0%, rgba(255, 111, 97, 1) 33%, rgba(255, 59, 92, 1) 66%, rgba(138, 43, 226, 1) 100%);
     --color-discord: rgba(114, 137, 218, 1);
 
+    /* Letter spacing */
+    --letter-spacing-xs: 0.68px;
+
     /* Fonts size */
     --font-size-xs: 12px;
     --font-size-sm: 14px;
     --font-size-md: 16px;
-    
 }

@@ -10,7 +10,7 @@ footer {
 
     .payment-method-section {
         width: 100%;
-        background-color: #2b2c3c;
+        background-color: var(--color-background-dark-grey);
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -24,16 +24,16 @@ footer {
         }
 
         span {
-            font-size: 16px;
+            font-size: var(--font-size-md);
             color: var(--color-grey);
-            letter-spacing: 0.68px;
+            letter-spacing: var(--letter-spacing-xs);
         }
     }
     
     
     .information-section {
         width: 100%;
-        background-color: #303141;
+        background-color: rgba(48, 49, 65, 1);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -48,7 +48,7 @@ footer {
         justify-content: flex-start;
         gap: 10px;
         padding-bottom: 1.5em;
-        border-bottom: 3px solid #4c6085;
+        border-bottom: 3px solid rgba(76, 96, 133, 1);
     
         a {
             width: 40px;
@@ -134,7 +134,7 @@ footer {
     
     .colum-information-desktop h3 {
         color: var(--color-white);
-        letter-spacing: 0.68px;
+        letter-spacing: var(--letter-spacing-xs);
         margin: 0 0 1em 0;
     }
     
@@ -156,7 +156,7 @@ footer {
     .colum-information-mobile .colum-information-details {
         width: 100%;
         color: var(--color-white);
-        border-bottom: 2px solid rgb(73, 80, 119);
+        border-bottom: 2px solid var(--color-border);
         padding-bottom: 1.2em;
     }
     
@@ -222,7 +222,7 @@ footer {
     }
     
     .rating span {
-        color: #858494;
+        color: var(--color-footer-text-grey);
     }
     
     .information-section-copyright {
@@ -233,7 +233,7 @@ footer {
     }
     
     .information-section-copyright small {
-        color: #858494;
+        color: var(--color-footer-text-grey);
         font-size: 1em;
     }
     

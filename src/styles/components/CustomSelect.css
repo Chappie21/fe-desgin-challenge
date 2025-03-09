@@ -15,12 +15,12 @@
       padding-right: 1.5rem;
       background: transparent;
       appearance: none;
-      letter-spacing: 0.68px;
+      letter-spacing: var(--letter-spacing-xs);
     }
 
     label {
-      font-size: 12px;
-      letter-spacing: 0.68px;
+      font-size: var(--font-size-xs);
+      letter-spacing: var(--letter-spacing-xs);
     }
 
     &::after {

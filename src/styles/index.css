@@ -33,8 +33,8 @@ select {
   background-color: transparent;
   border: none;
   outline: none;
-  color: white;
-  font-size: 16px;
+  color: var(--color-white);
+  font-size: var(--font-size-md);
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -74,7 +74,7 @@ label {
 .button {
   outline: none;
   border: none;
-  background-color: #39e29d;
+  background-color: var(--color-main-icon);
   color: var(--color-white);
   border-radius: 0.5em;
   padding-inline: 1.5em;

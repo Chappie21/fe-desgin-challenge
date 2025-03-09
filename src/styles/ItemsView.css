@@ -13,7 +13,7 @@
   .title {
     color: var(--color-white);
     font-size: 2.5em;
-    letter-spacing: 0.68px;
+    letter-spacing: var(--letter-spacing-xs);
 
     @media (width <= 992px) {
       font-size: 1.5em;
@@ -49,7 +49,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: #4c608533;
+    background-color: var(--color-background-input-grey);
     padding: 10px;
     border-radius: 2px;
     width: 12em;

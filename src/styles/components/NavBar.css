@@ -11,9 +11,9 @@
     width: 100%;
     top: 0%;
     position: fixed;
-    background-color: #303141;
-    color: #fff;
-    border-bottom: 1px solid rgb(73, 80, 119);
+    background-color: var(--color-navbar-background);
+    color: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
     z-index: 999;
 
     * {
@@ -108,7 +108,7 @@
 }
 
 details {
-    letter-spacing: 0.68px;
+    letter-spacing: var(--letter-spacing-xs);
     summary {
         display: flex;
         align-items: center;
@@ -161,7 +161,7 @@ details {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    color: #fff;
+    color: var(--color-white);
     font-size: large;
     margin-top: 10px;
 
@@ -171,7 +171,7 @@ details {
 }
 
 .button.login {
-    color: #303141;
+    color: var(--color-navbar-background);
 }
 
 .login svg {

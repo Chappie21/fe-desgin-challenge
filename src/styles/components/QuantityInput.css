@@ -13,7 +13,7 @@
     border: none;
     background: transparent;
     color: var(--color-white);
-    font-size: 14px;
+    font-size: var(--font-size-sm);
     -moz-appearance: textfield;
     
     &::-webkit-outer-spin-button,
@@ -44,7 +44,7 @@
     padding: 0;
     
     &:hover {
-        background: #444fc7;
+        background: var(--color-main-button-background);
     }
 }
 

@@ -4,11 +4,11 @@
     padding: 4em 3em;
     border-radius: 0.5em;
     border: 2px solid rgba(73,80,119, 1);
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 
-@media (max-width: 950px) {
+@media (max-width: 992px) {
     .card-container {
         padding: 2em 1em;
     }

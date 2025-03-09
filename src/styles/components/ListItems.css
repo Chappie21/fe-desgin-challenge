@@ -35,7 +35,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  color: white;
+  color: var(--color-white);
 
   @media (width <= 768px) {
     gap: 0.5rem;
@@ -66,15 +66,15 @@
   }
 
   &:hover {
-    background-color: #5762d5;
+    background-color: var(--color-main-button-background);
   }
 
   &.button-row {
     background-color: transparent;
-    border: 0.1em solid #5762d5;
+    border: 0.1em solid var(--color-main-button-background);
 
     &:hover {
-      background-color: #5762d5;
+      background-color: var(--color-main-button-background);
     }
   }
 }
