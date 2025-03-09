@@ -1,5 +1,7 @@
+import { IconType } from "react-icons";
+
 export interface ISocialNetwork {
     name            : string;
-    image           : string;
+    icon            : IconType;
     url             : string;
 }

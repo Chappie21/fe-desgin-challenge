@@ -15,7 +15,7 @@ export const Footer = () => {
             <img key={index} src={method.image} alt={method.name} />
           ))
         }
-        <p>and 50+ more</p>
+        <span>and 50+ more</span>
       </section>
       <section className="information-section">
 
@@ -23,9 +23,9 @@ export const Footer = () => {
         <article className="information-section-socials">
           {
             socialNetworks.map((social, index) => (
-              <a key={index} href={social.url}>
-                <img src={social.image} alt={social.name} />
-              </a>
+                <a key={index} href={social.url} className={social.name} target="_blank">
+                {<social.icon />}
+                </a>
             ))
           }
         </article>
@@ -85,7 +85,7 @@ export const Footer = () => {
                 ))
               }
             </div>
-            <p>Trustpilot Reviews</p>
+            <span>Trustpilot Reviews</span>
           </div>
 
         </article>
