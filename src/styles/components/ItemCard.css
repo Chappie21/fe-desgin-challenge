@@ -65,7 +65,8 @@
       width: 100%;
       font-size: 10px;
       line-height: 2em;
-      color: var(--color-grey);
+      color: var(--color-grey-light);
+      letter-spacing: 0.68px;
     }
   }
 
