@@ -16,7 +16,6 @@
 
 #sidebar header {
     width: 100%;
-    padding: 0.4em;
     border-bottom: 1px solid var(--color-border);
 }
 
@@ -26,6 +25,7 @@
     background: transparent;
     justify-content: flex-start;
     align-items: center;
+    padding: 20px 10px;
 }
 
 .close svg {
@@ -39,7 +39,7 @@
 
 #sidebar details {
     width: 100%;
-    color: white;
+    color: var(--color-white);
     text-transform: uppercase;
     cursor: pointer;
     border-bottom: 1px solid var(--color-border);
@@ -47,16 +47,14 @@
 
 #sidebar details summary {
     width: 100%;
-    padding: 1em;
+    padding: 16px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 #sidebar details ul {
-    padding-top: 1em;
-    padding-left: 2em;
-    padding-bottom: 1em;
+    padding: 10px 35px;
     list-style: none;
     background-color: var(--color-border);
     width: 100%;

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io'
+import { MdOutlineArrowDropDown, MdOutlineArrowDropUp } from "react-icons/md";
 import '../styles/components/NavItem.css'
 
 interface props {
@@ -19,7 +19,7 @@ export const NavigationItem = ({ title, items, customList, dropdownClass = 'drop
       <summary>
         <span>{title}</span>
         {
-          toggle ? <IoIosArrowUp size={16}/> : <IoIosArrowDown size={16} />
+          toggle ? <MdOutlineArrowDropUp size={24}/> : <MdOutlineArrowDropDown size={24} />
         }
       </summary>
       <ul className={dropdownClass}>

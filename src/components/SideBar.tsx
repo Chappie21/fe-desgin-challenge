@@ -1,7 +1,7 @@
 import { NavItems } from "../mock";
-import { IoIosArrowRoundBack } from "react-icons/io";
-import "../styles/components/SideBar.css";
+import { IoCloseOutline } from "react-icons/io5";
 import { NavigationItem } from "./NavigationItem";
+import "../styles/components/SideBar.css";
 
 interface props {
     handleClose: () => void;
@@ -13,8 +13,8 @@ export const SideBar = ({ handleClose }: props) => {
         <aside id="sidebar">
             <header>
                 <button className="button close" onClick={handleClose}>
-                    <IoIosArrowRoundBack />
-                    Menu
+                    <IoCloseOutline />
+                    <span>Close</span>
                 </button>
             </header>
 
