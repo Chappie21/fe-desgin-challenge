@@ -27,6 +27,7 @@ export const SideBar = ({ handleClose }: props) => {
                             title={navItem.title}
                             dropdownClass='dropdown-side'
                             items={navItem.childrens}
+                            iconSet='Md'
                         />
                     ))
                 }
